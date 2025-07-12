@@ -1,0 +1,12 @@
+.idea/
+.vscode/
+*.swp
+*.log
+__pycache__/
+*.pyc
+*.pyo
+*.class
+*.jar
+node_modules/
+.DS_Store
+Thumbs.db
