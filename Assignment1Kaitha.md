@@ -1,91 +1,133 @@
- Assignment 1 - Kaitha
-
- About Me  
-Hi! I’m Karunakar Reddy Kaitha, a student in MSSE640 for Summer 2025. This is my first assignment where I’m learning how Git and GitHub work.
+ Assignment 1  Karunakar Reddy Kaitha
 
 
 
- What This Assignment is About  
-The goal here was to get comfortable with Git — how it tracks changes, how to use GitHub for remote repos, and how to manage my code efficiently. I also researched the basics behind version control systems.
+ Overview
+
+For this assignment, I explored Git, GitHub, and the general workflow of using a distributed version control system (DVCS).  
+I set up a local repository on my machine, connected it to a remote repository on GitHub, and practiced pushing commits.  
+
+This was a great opportunity to build hands-on skills in tools that every modern software engineer uses.
 
 
 
- What I Learned from Researching Git
+ What I Researched and Learned
 
-- Types of Version Control:  
-  There are centralized systems where everything happens on one server, and distributed systems where each developer has a full copy. Git is a distributed system, which means I have the whole project history on my own machine.
+ Types of Version Control Systems
 
-- Snapshots, Not Diffs:  
-  Instead of storing just the changes between files, Git takes a snapshot of the entire project every time I commit. This makes history easy to track.
+While doing my research, I found there are mainly two types of version control systems:
 
-- Repositories:  
-  My local repo is the copy on my computer. The remote repo, like the one on GitHub, is where I push my changes so others can see them or so I have a backup.
+ Centralized Version Control Systems (CVCS) like SVN or CVS, which have a single central server containing the versioned files. Everyone checks in and out from this single place.  
+  ➡ The drawback: if the server goes down, nobody can collaborate.
 
-- Commits:  
-  Commits are like save points — they record the state of my files along with info like when I did the change and what I changed.
+ Distributed Version Control Systems (DVCS) like Git, where every developer has a complete copy of the repository including full history on their own machine.  
+  ➡ This makes collaboration faster, safer, and more flexible.
 
-- Working Directory & Staging Area:  
-  The working directory is where I make changes to files. The staging area is like a holding zone where I prepare exactly what changes I want to include in my next commit.
-
-- Git Workflow Diagram:  
-  ![Git Workflow](https://git-scm.com/book/en/v2/images/basic-workflow.png)  
-  This image helped me understand the flow of changes from working directory to commit to remote repo.
+Git is a DVCS, which means I have a full backup locally, and can still work even without a network connection.
 
 
 
- How I Set Up My Repo
+ Key Git Concepts I Learned
 
-1. Created a GitHub account and made a repository called `MSSE640-2025summer`.
+ Repository:  
+   A Git repository (`repo`) is the database where Git stores all the snapshots (commits) and metadata.  
+   A local repo is on my machine; a remote repo is hosted on GitHub.
 
-2. Set up a local repository on my machine, connected it to GitHub, and configured my Git username and email locally (so it’s specific to this repo).
+ Working Directory:  
+   This is where I actually modify my project files.
 
-3. Added a README.md file where I put my research notes, then committed and pushed the changes to GitHub.
+ Staging Area (Index):  
+   A middle step before committing.  
+   When I use `git add`, I move changes into the staging area. This lets me control exactly what goes into the next commit.
 
+ Commits:  
+   Think of commits like checkpoints or save points.  
+   Each commit has a unique SHA1 hash.  
+   They allow me to roll back or review history.
 
-
- What I Did for This Assignment
-
-- Learned how to initialize a repo and connect it with a remote GitHub repo.
-
-- Practiced adding files to the staging area, committing changes, and pushing those changes remotely.
-
-- Edited the README.md file with my notes and successfully pushed it.
-
-
-
- What I Took Away From This
-
-- Git is a powerful tool for tracking project history and collaborating with others.
-
-- Understanding the staging area is key before committing changes.
-
-- Knowing the difference between local and remote repos helps me manage backups and teamwork.
-
-- Basic commands like `git add`, `git commit`, `git push`, and `git clone` are essential for daily work.
+ Snapshots vs Diffs:  
+   Unlike older systems that track differences line by line, Git stores a snapshot of the entire project at each commit.  
+   If files didn’t change, Git links to the old file, saving space.
 
 
 
- Screenshots
+ Useful Diagram
 
-Here are some screenshots showing my Git status and my GitHub repository page.
+![Git Workflow](./screenshots/gitstatus.png)
 
-1. Git Status - Working Directory Clean
+This diagram (captured from my terminal) helped me visualize how files move:
 
-(Insert your screenshot here)
+ From the Working Directory (where I edit)  
+ to the Staging Area (using `git add`),  
+ then to a commit in the local repository (using `git commit`),  
+ and finally pushed to the remote repository on GitHub (using `git push`).
 
-2. GitHub Repository Page
-
-(Insert your screenshot here)
-
-
-
- References
-
-- Pro Git Book: https://git-scm.com/book/en/v2  
-- GitHub Documentation: https://docs.github.com/en  
-- Assignment Instructions from Instructor Randall Granier
+This gave me a clear sense of how Git manages project history.
 
 
 
-Thank you for reading my assignment!  
-Karunakar Reddy Kaitha
+ What I Did
+
+ Installed Git Bash on Windows and VS Code as my editor.
+ Created a new GitHub account and set up my remote repository for the class.
+ Initialized a local repo with `git-init`, set my local config name and email, and created a README.
+ Connected my local repo to the GitHub remote using:
+    ```bash
+    git remote add origin https://github.com/karunakar1826/MSSE6402025summer.git
+    ```
+ Created commits with:
+    ```bash
+    git add .
+    git commit m "initial commit"
+    ```
+ Then pushed to GitHub with:
+    ```bash
+    git push u origin main
+    ```
+
+
+
+ My Screenshots
+
+ Git Workflow on My Machine
+
+![Git Workflow](./screenshots/gitstatus.png)
+
+This shows my terminal after running `git status`, where everything is committed and clean.  
+This proved to me that my local repo was in sync, and no files were left staged or untracked.
+
+
+
+ GitHub Repository Confirmation
+
+![GitHub Repository](./screenshots/githubrepo.png)
+
+This is a screenshot of my GitHub repository page.  
+It shows all the commits have been successfully pushed.  
+I can see my README, my assignment markdown file, and the history.  
+This confirms everything is version controlled and stored safely on GitHub.
+
+
+
+ Reflections & Takeaways
+
+Doing this step-by-step helped me really understand Git’s core ideas.  
+Before, I mostly copied commands from tutorials without really knowing what was happening under the hood.
+
+Now I have a much better mental model:
+
+ The working directory is where I make changes.
+ The staging area is a place to prepare what will be saved.
+ Commits create snapshots in my local repo history.
+ The remote repo on GitHub is like an online backup and collaboration hub.
+
+I also realized why commits with good messages matter — they’re not just for me today, but for my future self (or teammates) trying to understand how the project evolved.
+
+
+
+ Link to My Repository
+
+ GitHub Repo: [MSSE6402025summer](https://github.com/karunakar1826/MSSE6402025summer)
+
+
+
