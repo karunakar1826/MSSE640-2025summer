@@ -100,7 +100,7 @@ This proved to me that my local repo was in sync, and no files were left staged 
 
  GitHub Repository Confirmation
 
-![GitHub Repository](./screenshots/githubrepo.png)
+![GitHub Repo](screenshots/github-repo.png)
 
 This is a screenshot of my GitHub repository page.  
 It shows all the commits have been successfully pushed.  
