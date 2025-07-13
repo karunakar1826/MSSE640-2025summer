@@ -72,18 +72,18 @@ This gave me a clear sense of how Git manages project history.
  Created a new GitHub account and set up my remote repository for the class.
  Initialized a local repo with `git-init`, set my local config name and email, and created a README.
  Connected my local repo to the GitHub remote using:
-    ```bash
+    bash
     git remote add origin https://github.com/karunakar1826/MSSE6402025summer.git
-    ```
+    
  Created commits with:
-    ```bash
+    bash
     git add .
     git commit m "initial commit"
-    ```
+    
  Then pushed to GitHub with:
-    ```bash
+    bash
     git push u origin main
-    ```
+    
 
 
 
@@ -91,7 +91,7 @@ This gave me a clear sense of how Git manages project history.
 
  Git Workflow on My Machine
 
-![Git Workflow](./screenshots/gitstatus.png)
+[Git Workflow](./screenshots/gitstatus.png)
 
 This shows my terminal after running `git status`, where everything is committed and clean.  
 This proved to me that my local repo was in sync, and no files were left staged or untracked.
@@ -100,12 +100,19 @@ This proved to me that my local repo was in sync, and no files were left staged 
 
  GitHub Repository Confirmation
 
-![GitHub Repo](screenshots/github-repo.png)
+[GitHub Repo](screenshots/github-repo.png)
 
 This is a screenshot of my GitHub repository page.  
 It shows all the commits have been successfully pushed.  
 I can see my README, my assignment markdown file, and the history.  
 This confirms everything is version controlled and stored safely on GitHub.
+
+Git Workflow Diagram
+
+This diagram helped me understand how Git moves from the working directory to the commit to the remote repository.
+
+[Git Workflow Diagram](screenshots/git-workflow.png)
+
 
 
 
