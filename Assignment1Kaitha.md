@@ -2,7 +2,7 @@
 
 
 
- Overview
+ Overview:
 
 For this assignment, I explored Git, GitHub, and the general workflow of using a distributed version control system (DVCS).  
 I set up a local repository on my machine, connected it to a remote repository on GitHub, and practiced pushing commits.  
