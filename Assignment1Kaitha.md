@@ -53,6 +53,7 @@ Git is a DVCS, which means I have a full backup locally, and can still work even
 
  Useful Diagram
 
+![Git Workflow](./screenshots/gitstatus.png)
 
 This diagram (captured from my terminal) helped me visualize how files move:
 
