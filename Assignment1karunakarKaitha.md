@@ -1,4 +1,4 @@
-
+Discuss:
 Responsibilities of Software Engineers in Mitigating the Environmental and Social Impacts of LLMs
 (Based on “On the Dangers of Stochastic Parrots” and “Challenging the Myths of Generative AI”)
 
@@ -75,4 +75,5 @@ Challenging unethical uses of generative AI.
 Supporting open discussions about AI impacts.
 
 Continuously learning and adapting to best practices in ethical AI development.
+
 
